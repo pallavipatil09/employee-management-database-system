@@ -1,0 +1,16 @@
+emp_id,employee_name,dept_name,role_name,basic_salary,bonus,total_salary,hire_date,status
+12,"Anjali Das",Admin,"Admin Officer",45000.00,2500.00,47500.00,2021-05-15,Active
+10,"Pooja Nair","Customer Support","Support Executive",40000.00,2000.00,42000.00,2023-01-10,Active
+3,"Rahul Mehta",Finance,Accountant,60000.00,4000.00,64000.00,2020-07-20,Active
+14,"Meena Iyer",Finance,Accountant,65000.00,4500.00,69500.00,2023-03-19,Active
+2,"Priya Verma",HR,"HR Executive",50000.00,3000.00,53000.00,2021-03-10,Active
+8,"Riya Shah",HR,"HR Executive",52000.00,3500.00,55500.00,2020-04-30,Active
+1,"Amit Sharma",IT,"Data Analyst",70000.00,5000.00,75000.00,2022-01-15,Active
+6,"Neha Joshi",IT,"Data Analyst",68000.00,4000.00,72000.00,2022-06-18,Active
+11,"Sameer Ali",Legal,"Legal Advisor",100000.00,10000.00,110000.00,2022-08-22,Active
+5,"Karan Singh",Marketing,"Marketing Specialist",75000.00,6000.00,81000.00,2019-11-25,Active
+15,"Sanjay Gupta",Marketing,"Marketing Specialist",72000.00,5000.00,77000.00,2021-10-05,Active
+9,"Vikas Yadav",Operations,"Operations Manager",95000.00,9000.00,104000.00,2021-12-01,Active
+13,"Rohit Kulkarni",R&D,"Research Scientist",120000.00,15000.00,135000.00,2020-02-11,Active
+4,"Sneha Patil",Sales,"Sales Manager",85000.00,7000.00,92000.00,2023-02-05,Active
+7,"Arjun Kapoor",Sales,"Sales Manager",90000.00,8000.00,98000.00,2021-09-12,Active

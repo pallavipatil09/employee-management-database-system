@@ -1,0 +1,11 @@
+review_id,emp_id,employee_name,review_year,rating,remarks
+1,1,"Amit Sharma",2024,4,"Good performance"
+2,2,"Priya Verma",2024,3,Average
+3,3,"Rahul Mehta",2024,5,Excellent
+4,4,"Sneha Patil",2024,4,"Very good"
+5,5,"Karan Singh",2024,2,"Needs improvement"
+6,6,"Neha Joshi",2024,4,Consistent
+7,7,"Arjun Kapoor",2024,5,Outstanding
+8,8,"Riya Shah",2024,3,Average
+9,9,"Vikas Yadav",2024,4,Good
+10,10,"Pooja Nair",2024,2,"Below expectations"

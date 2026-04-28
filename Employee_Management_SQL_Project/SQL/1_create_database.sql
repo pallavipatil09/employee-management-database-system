@@ -1,0 +1,2 @@
+create database employee_management_db;
+use employee_management_db;
