@@ -1,48 +1,91 @@
 # Employee Management Database System
 
 ## 📌 Project Overview
-The **Employee Management Database System** is an advanced SQL project designed to manage and analyze employee-related operations in an organization.
-It handles employee records, departments, job roles, salaries, attendance, leave management, and performance reviews using a structured relational database.
-This project demonstrates strong skills in **SQL development, database design, normalization, reporting, query optimization, and business analysis**.
+
+The **Employee Management Database System** is an advanced SQL project designed to manage and analyze employee operations in an organization. It centralizes employee records, departments, job roles, salaries, attendance, leaves, and performance reviews in one structured relational database.
+
+This project demonstrates practical skills in:
+
+* SQL Development
+* Database Design
+* Normalization
+* Query Writing
+* Reporting & Analytics
+* Query Optimization
+* Business Problem Solving
+
+---
+
+## 🎯 Business Problem
+
+Many organizations store employee data in multiple files or disconnected systems, making reporting difficult and time-consuming.
+
+This project solves that problem by creating a single database system that can answer questions like:
+
+* How many employees are in each department?
+* Which department has the highest salary cost?
+* Who are the top-paid employees?
+* Which employees have low attendance?
+* Who took the most leaves?
+* Which employees are top performers?
 
 ---
 
 ## 🎯 Objectives
-- Manage employee master records efficiently
-- Track departments and job roles
-- Maintain salary details and compensation reports
-- Monitor employee attendance and leaves
-- Evaluate employee performance
-- Generate business reports for decision-making
+
+* Manage employee master data efficiently
+* Track departments and job roles
+* Store salary and compensation details
+* Monitor attendance records
+* Manage leave requests and approvals
+* Evaluate employee performance
+* Generate reports for management decisions
 
 ---
 
 ## 🛠️ Tools & Technologies
-- MySQL
-- MySQL Workbench
-- SQL
-- Excel / CSV (for exported reports)
-- GitHub
+
+* MySQL
+* MySQL Workbench
+* SQL
+* Excel / CSV (for exported reports)
+* GitHub
 
 ---
 
 ## 🗂️ Database Modules
-- Employees
-- Departments
-- Job Roles
-- Salaries
-- Attendance
-- Leaves
-- Performance Reviews
+
+The system includes these core modules:
+
+1. Employees
+2. Departments
+3. Job Roles
+4. Salaries
+5. Attendance
+6. Leaves
+7. Performance Reviews
 
 ---
 
 ## 🏗️ Database Design Features
-- Relational database with multiple connected tables
-- Primary Key / Foreign Key relationships
-- Constraints and validation rules
-- Normalized schema design
-- Reusable reporting structure
+
+* Relational database with multiple connected tables
+* Primary Key / Foreign Key relationships
+* Constraints and validation rules
+* Normalized schema design
+* Reusable reporting structure
+* Optimized querying with indexes
+
+---
+
+## 🔗 Table Relationships
+
+* One department can have many employees
+* One job role can have many employees
+* One employee can have salary records
+* One employee can have multiple attendance records
+* One employee can have multiple leave records
+* One employee can have multiple performance reviews
 
 ---
 
@@ -59,7 +102,7 @@ employee-management-database-system/
 │   ├── 6_procedures.sql
 │   └── 7_indexes.sql
 │   └── 8_reports.sql
-│
+
 │── outputs/
 │   ├── employee_report.csv
 │   ├── salary_summary.csv
@@ -71,59 +114,201 @@ employee-management-database-system/
 │   └── er_diagram.png
 │
 │── README.md
+```
+
+---
+
+## 🧱 Database Schema Summary
+
+### departments
+
+Stores department names and locations.
+
+Columns:
+
+* dept_id
+* dept_name
+* location
+
+### job_roles
+
+Stores role names and salary ranges.
+
+Columns:
+
+* role_id
+* role_name
+* min_salary
+* max_salary
+
+### employees
+
+Stores employee personal and job information.
+
+Columns:
+
+* emp_id
+* first_name
+* last_name
+* email
+* phone
+* gender
+* hire_date
+* dept_id
+* role_id
+* status
+
+### salaries
+
+Stores compensation details.
+
+Columns:
+
+* salary_id
+* emp_id
+* basic_salary
+* bonus
+* effective_from
+
+### attendance
+
+Stores daily attendance records.
+
+Columns:
+
+* attendance_id
+* emp_id
+* attendance_date
+* status
+* check_in
+* check_out
+
+### leaves
+
+Stores leave requests.
+
+Columns:
+
+* leave_id
+* emp_id
+* leave_type
+* start_date
+* end_date
+* approval_status
+
+### performance_reviews
+
+Stores employee review ratings and remarks.
+
+Columns:
+
+* review_id
+* emp_id
+* review_date
+* rating
+* remarks
+
+---
 
 ## 📊 Key SQL Features Used
 
-CREATE DATABASE / CREATE TABLE
-INSERT / UPDATE / DELETE
-INNER JOIN / LEFT JOIN
-GROUP BY / HAVING
-ORDER BY / LIMIT
-CASE Statements
-Subqueries
-Common Table Expressions (CTE)
-Window Functions
-Views
-Stored Procedures
-Indexing
+This project uses beginner to advanced SQL concepts:
+
+* CREATE DATABASE / CREATE TABLE
+* INSERT / UPDATE / DELETE
+* Constraints (PK, FK, UNIQUE, CHECK, DEFAULT)
+* INNER JOIN / LEFT JOIN
+* GROUP BY / HAVING
+* ORDER BY / LIMIT
+* Aggregate Functions (SUM, AVG, COUNT, MAX, MIN)
+* CASE Statements
+* Subqueries
+* Common Table Expressions (CTE)
+* Window Functions
+* Views
+* Stored Procedures
+* Indexing
 
 ---
 
-## 📈 Example Reports Generated
+## 📈 Reports Generated
 
-1. Employee Details Report
-Shows employee name, department, role, salary, and hire date.
+### 1. Employee Details Report
 
-2. Department Salary Summary
-Shows total employees, total salary cost, and average salary by department.
+Displays employee name, department, role, salary, and hire date.
 
-3. Attendance Report
-Tracks present, absent, half-day, and work-from-home records.
+### 2. Department Salary Summary
 
-4. Top Paid Employees
-Identifies highest earning employees.
+Shows:
 
-5. Performance Report
-Shows employee ratings and review remarks.
+* Total employees
+* Total salary cost
+* Average salary
+
+### 3. Attendance Report
+
+Tracks:
+
+* Present days
+* Absent days
+* Work from home records
+* Half days
+
+### 4. Top Paid Employees
+
+Shows highest earning employees in the company.
+
+### 5. Performance Report
+
+Displays ratings and remarks for employee reviews.
 
 ---
 
-## 🚀 Business Value
+## 👁️ Views Used
 
-This system can help organizations:
+### employee_summary
 
-- Centralize employee data
-- Improve HR reporting
-- Track workforce productivity
-- Analyze department costs
-- Support management decisions
+A reusable reporting view combining employee, department, role, and salary details.
 
-## This project demonstrates:
+Example:
 
-- SQL Development
-- Database Design
-- Query Writing
-- Data Modeling
-- Reporting & Analytics
-- Performance Optimization
-- Problem Solving
+```sql
+SELECT * FROM employee_summary;
+```
+
+---
+
+## ⚙️ Stored Procedures
+
+### get_employees_by_department
+
+Returns employees for a selected department.
+
+Example:
+
+```sql
+CALL get_employees_by_department('IT');
+```
+
+### department_salary_report
+
+Returns department-wise salary totals.
+
+Example:
+
+```sql
+CALL department_salary_report();
+```
+
+---
+
+## ⚡ Indexing Used
+
+Indexes were added to improve performance:
+
+* employees(dept_id)
+* salaries(emp_id)
+* attendance(emp_id)
+
+
+
