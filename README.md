@@ -72,7 +72,7 @@ employee-management-database-system/
 │
 │── README.md
 
-📊 Key SQL Features Used
+## 📊 Key SQL Features Used
 
 CREATE DATABASE / CREATE TABLE
 INSERT / UPDATE / DELETE
@@ -89,7 +89,7 @@ Indexing
 
 ---
 
-📈 Example Reports Generated
+## 📈 Example Reports Generated
 
 1. Employee Details Report
 Shows employee name, department, role, salary, and hire date.
@@ -108,7 +108,7 @@ Shows employee ratings and review remarks.
 
 ---
 
-🚀 Business Value
+## 🚀 Business Value
 
 This system can help organizations:
 
@@ -118,7 +118,7 @@ This system can help organizations:
 - Analyze department costs
 - Support management decisions
 
-This project demonstrates:
+## This project demonstrates:
 
 - SQL Development
 - Database Design
